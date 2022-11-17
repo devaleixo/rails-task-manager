@@ -1,4 +1,5 @@
-<h1>Tasks</h1>
+<i class="fa-solid fa-book-open-reader"></i>
+<h2>Hi, here is a list of your tasks:</h2>
 <ul><%@tasks.each do |task|%>
 <li><%= link_to task.title, task_path(task) %><%=link_to "Delete", destroy_path(task),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%> </li>
